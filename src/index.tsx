@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 
 import { Layout, Row, Col, Card } from 'antd';
 const { Header, Footer, Content} = Layout;
+import KriyaCard from './KriyaCard';
 
 import "antd/dist/antd.css"
 import "./index.scss"
@@ -18,6 +19,7 @@ ReactDOM.render(
           <h1> Kriya App </h1>
         </Header>
         <Content>
+        <KriyaCard></KriyaCard>
         <Row align="top" justify="center">
           <Col span={12}>
           <Card bordered={true} >
