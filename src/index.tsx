@@ -2,32 +2,43 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-
-import { Button, DatePicker, Card, version } from "antd"
-const { Meta } = Card;
+import { Layout, Row, Col, Card } from 'antd';
+const { Header, Footer, Content} = Layout;
 
 import "antd/dist/antd.css"
 import "./index.scss"
 
-console.log('Hello from tsx!')
+const NOMBRE_KRIYA = "NOMBRE DE LA KRIYA"
 
 ReactDOM.render(
   <div className="App">
-    <p>Hello Miguel</p>
-    <h1>antd version: {version}</h1>
-    <DatePicker />
-    <Button type="primary" style={{ marginLeft: 8 }}>
-      Primary Button
-    </Button>
+    <>
+    <Layout>
+        <Header>
+          <h1> Kriya App </h1>
+        </Header>
+        <Content>
+        <Row align="top" justify="center">
+          <Col span={12}>
+          <Card bordered={true} >
+            <h1> { NOMBRE_KRIYA } </h1>
+            <p>lorem ipsum jsnald  aslk saj fsdkaj flsjd ksaj dkaj ska...</p>
+          </Card>
+          <Card  >
+            <h1> { NOMBRE_KRIYA } </h1>
+            <p>lorem ipsum jsnald  aslk saj fsdkaj flsjd ksaj dkaj ska...</p>
+          </Card>
+          <Card  >
+            <h1> { NOMBRE_KRIYA } </h1>
+            <p>lorem ipsum jsnald  aslk saj fsdkaj flsjd ksaj dkaj ska...</p>
+          </Card>
+          </Col>
+        </Row>
+        </Content>
+        {/*<Footer>Footer</Footer>*/}
+    </Layout>
+    </>
 
-    <h1>Ejemplo de Card</h1>
-    <Card
-      hoverable
-      style={{ width: 240 }}
-      cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-    >
-      <Meta title="Europe Street beat" description="www.instagram.com" />
-    </Card>
   </div>,
   document.getElementById('root'),
 )

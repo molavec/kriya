@@ -9,7 +9,7 @@ With this app you can:
 * Start a Kriya
 * View every asana in Kriya
 * Start timer of every asana
-* Reproduce a kindy sound at the end of asana timer
+* Reproduce a kindy sound at the end of asana time
 
 # Future improvments 
 
