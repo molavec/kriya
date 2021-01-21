@@ -1,0 +1,23 @@
+{
+  "name": "kriya",
+  "version": "1.0.0",
+  "description": "Kriya is an Application designed to help Kundalini Yoga Instructors.",
+  "main": "index.js",
+  "repository": "https://gitlab.com/molavec/kriya",
+  "author": "molavec",
+  "license": "Copyright molavec.com",
+  "scripts": {
+    "dev": "parcel ./src/index.html"
+  },
+  "devDependencies": {
+    "@types/antd": "^1.0.0",
+    "@types/react": "^17.0.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "antd": "^4.10.3",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}
