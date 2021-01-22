@@ -3,13 +3,12 @@ import * as React from 'react';
 import { Layout, Row, Col } from 'antd';
 const { Header, Content } = Layout;
 import KriyaCard from '../KriyaCard';
+import KriyaHeader from '../KriyaHeader'
 
 const Home: React.FunctionComponent = () => (
   <>
     <Layout>
-      <Header>
-        <h1> Kriya App </h1>
-      </Header>
+      <KriyaHeader/>
       <Content>
         <Row align="top" justify="center">
           <Col span={12}>
