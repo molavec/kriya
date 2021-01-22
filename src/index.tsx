@@ -1,6 +1,6 @@
 // index.tsx
-import React from 'react'
-import ReactDOM from 'react-dom'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 
 import { Layout, Row, Col, Card } from 'antd';
 const { Header, Footer, Content } = Layout;
@@ -21,7 +21,7 @@ ReactDOM.render(
         <Content>
           <Row align="top" justify="center">
             <Col span={12}>
-              <KriyaCard />
+              <KriyaCard name="Este es un nombre" description="esta es una descripción"/>
               <KriyaCard />
               <KriyaCard />
             </Col>
