@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { Layout, Row, Col, Card } from 'antd';
-const { Header, Footer, Content } = Layout;
+import { Layout, Row, Col } from 'antd';
+const { Header, Content } = Layout;
 import KriyaCard from '../KriyaCard';
 
 const Home: React.FunctionComponent = () => (
@@ -19,7 +19,6 @@ const Home: React.FunctionComponent = () => (
           </Col>
         </Row>
       </Content>
-      {/*<Footer>Footer</Footer>*/}
     </Layout>
   </>
 )
