@@ -1,13 +1,19 @@
-import React from 'react';
+import * as React from 'react';
 import { Card } from 'antd';
 
 const NOMBRE_KRIYA = "NOMBRE DE LA KRIYA blabla";
 const DESCRIPCION_KRIYA = "lorem ipsum jsnald  aslk saj fsdkaj flsjd ksaj dkaj ska...";
 
-const KriyaCard: React.FunctionComponent = () => (
-    <Card bordered={true} >
-        <h1> { NOMBRE_KRIYA } </h1>
-        <p> { DESCRIPCION_KRIYA } </p>
+
+interface KriyaInfo{
+  name?: string,
+  description?: string
+}
+
+const KriyaCard: React.FunctionComponent<KriyaInfo> = ({name = NOMBRE_KRIYA, description = DESCRIPCION_KRIYA}) => (
+    <Card>
+        <h1> { name } </h1>
+        <p> { description } </p>
     </Card>
     )
 
