@@ -8,7 +8,7 @@ import KriyaHeader from '../KriyaHeader'
 const Home: React.FunctionComponent = () => (
   <>
     <Layout>
-      <KriyaHeader/>
+      <KriyaHeader name="Kriya App Home"/>
       <Content>
         <Row align="top" justify="center">
           <Col span={12}>
