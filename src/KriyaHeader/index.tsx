@@ -4,13 +4,13 @@ const { Header } = Layout
 
 const TITLE = "Kriya App"
 
-interface HeaderInfo { 
-    name?: string 
+interface KriyaHeaderInfo {
+    name?: string
 }
 
-const KriyaHeader: React.FunctionComponent<HeaderInfo> = ({ name = TITLE }) => (
+const KriyaHeader: React.FunctionComponent<KriyaHeaderInfo> = ({ name = TITLE }) => (
     <Header>
-        <h1> { name } </h1>
+        <h1> {name} </h1>
     </Header>
 )
 
