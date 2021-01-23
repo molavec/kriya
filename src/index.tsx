@@ -2,8 +2,8 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 
-import Home from './Home';
-import KriyaView from './KriyaView';
+import Home from './components/Home';
+import KriyaView from './components/KriyaView';
 
 import "antd/dist/antd.css"
 import "./index.scss"
