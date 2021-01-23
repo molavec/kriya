@@ -1,8 +1,11 @@
 import * as React from 'react'
+
 import { Layout } from 'antd'
 const { Header } = Layout
+import './index.scss'
 
 const TITLE = "Kriya App"
+
 
 interface KriyaHeaderInfo {
     name?: string
